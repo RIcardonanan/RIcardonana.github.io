@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<style>
+			*{
+				margin: 0px;
+				padding: 0px;
+				
+			}
+			header{
+				width: 100%;
+				height: 70px;
+				border-bottom: 3px solid gainsboro;
+				position: relative;
+				/*top: 0px;
+				left: 0px;*/
+				background: white;
+				min-width: 1100px;
+			}
+			header>.m-nav-cb{
+				width: 1100px;
+				height: 100%;
+				margin: 0px auto;
+				background: #C4E3F3;
+				position: relative;
+			}
+			header>.m-nav-cb>.logo{
+				width: 290px;
+				height: 70px;
+				position: absolute;
+				top: 0px;
+				left: 0px;				
+			}
+			header>.m-nav-cb>.logo>img{
+				width: 100%;
+			}
+			section{
+				width: 1100px;
+				height: 19700px;
+				margin: 10px auto 0px;
+			/*	background: #AFD9EE;*/
+			}
+			section>.m-bread{
+				width: 1100px;
+				height: 80px;
+				margin-bottom:15px ;
+				border-bottom: 1px solid #333333 ;
+				position: relative;
+			}
+			section>.m-bread>.block{
+				width: 1100px;
+				height: 31px;
+				/*padding: 30px 0px 19px 0px;
+				box-sizing:border-box;*/
+				position: absolute;
+				top: 30px;
+				bottom: 19px;
+				/*background: #FFFF00;*/
+			}
+			section>.m-bread>.block>a{
+				font-size: 18px;
+				font-weight: 600;
+				text-decoration: none;
+				color: #333333;
+				line-height: 41px;
+				}
+			section>.m-bread>.block>span{
+				font-size: 18px;
+				font-weight: 600;
+				line-height: 41px;
+				color: #999999;
+			}
+			section>.m-bread>.block>.share_fr{
+				width: 59px;
+				height: 21px;
+				float: right;
+				/*position: absolute;
+				right: 0px;
+				bottom: 0px;*/
+				/*background: pink;*/
+			}
+			section>.m-bread>.block>.share_fr>span{
+				font-size: 18px
+				color:#999999;
+				margin-top: 11px;
+				/*text-indent: 27px;*/
+				font-weight:600 ;
+			}
+			section>.f-cb{
+				width: 1100px;
+				height: 530px;
+				min-height: 530px;
+			/*	background: #C4E3F3;*/
+				position: relative;	
+				
+			}
+			section>.f-cb>.c_1{
+				width: 440px;
+				height: 530px;
+				position: absolute;
+				left: 0px;
+				top: 0px;
+				/*overflow: hidden;*/
+				
+			}
+			section>.f-cb>.c_1>.img_box1{
+				width: 440px;
+				height:440px ;
+				position: absolute;
+				border: 1px solid black;
+				top: 0px;
+				left: 0px;
+			}
+			section>.f-cb>.c_1>.img_box1>img{
+				width: 100%;
+				height: 100%;
+			}
+			section>.f-cb>.c_1>.img_box2{
+				height: 80px;
+				margin-top:10px ;
+				width:440px ;
+			}
+			section>.f-cb>.basic{
+				width: 580px;
+				height: 440px;
+				position: absolute;
+				top: 0px;
+				right: 0px;
+				/*background: fuchsia;*/
+			}
+			section>.f-cb>.basic>.f-ff2{
+				display: block;
+				width: 580px;
+				height: 68px;
+				line-height: 34px;
+   				color: #333;
+    			font-size: 24px;
+    			font-weight: 600;
+			}
+			section>.f-cb>.basic>.sellpoint{
+				display: block;
+				width: 580px;
+				height: 19px;
+				margin-top: 8px;
+				margin-bottom: 10px;
+				font-size: 14;
+				color: #999;
+			}
+			section>.f-cb>.basic>.price{
+				display: block;
+				width: 580px;
+				height: 40px;
+				margin: 20px 0px 20px 0px;
+				/*background: #C4E3F3;*/
+			}
+			section>.f-cb>.basic>.price>.rmb{
+				font-size: 30px;
+    			margin-right: 3px;
+    			color: #d33a31;
+			}
+			section>.f-cb>.basic>.price>.j-flag{
+				margin-right: 4px;
+    			font-size: 30px;
+    			color: #d33a31
+			}
+			section>.f-cb>.basic>.price.dis,.orgin_price{
+				/*margin-left: 16px;*/
+    			font-size: 16px;
+    			color: #999;
+    			text-decoration: line-through;
+			}
+			section>.f-cb>.basic>.basic_bm{
+				width: 580px;
+				height: 230px;
+				position: absolute;
+				right: 0px;
+				bottom: 0px;
+				/*background: #5CB85C;*/
+			}
+			section>.f-cb>.basic>.basic_bm>ul{
+				position: absolute;
+				height: 170px;
+				left: 0px;
+				top: 0px;
+				margin-right:30px ;
+			}
+			section>.f-cb>.basic>.basic_bm>ul>li{
+				list-style: none;
+				margin-bottom: 16px;
+				width: 45px;
+				height: 30px;
+				line-height: 30px;
+				text-align:center;
+				font-size: 14px;
+				color: #999999;
+				
+			}
+			section>.f-cb>.basic>.basic_bm>.basic_bmr{
+				width: 505px;
+				height: 170px;
+				position: absolute;
+				right:0px;
+				top: 0px;
+				/*background: #67B168;*/
+			}
+			section>.f-cb>.basic>.basic_bm>.basic_bmr>.salo{
+				width: 503px;
+				height: 28px;
+				border: 1px solid salmon;
+			}
+			section>.f-cb>.basic>.basic_bm>.basic_bmr>#color{
+				width: 66px;
+				/*height: 30px;*/
+				margin-top: 20px;
+				/*line-height: 30px;*/
+				/*border: 1px solid #F5F5F5;*/
+				display: block;
+			}
+			section>.f-cb>.basic>.basic_bm>.basic_bmr>#number{
+				/*width: 150px;
+				height: 30px;*/
+				margin-top: 20px;
+				/*border: 1px solid #F5F5F5;*/
+				display: block;
+			}
+			section>.f-cb>.basic>.basic_bm>.basic_bmr>#number>button{
+				display: block;
+			}
+			section>.f-cb>.basic>.basic_bm>.basic_bmr>.serve{
+				width: 505px;
+				height: 20px;
+				margin-top:20px ;
+				border: 1px solid #F5F5F5;
+				position: absolute;
+				bottom: 0px;
+				left: 0px;
+			}
+			section>.f-cb>.basic>.button_box{
+				width: 580px;
+				height: 55px;
+				/*background: #5BC0DE;*/
+				position: absolute;
+				bottom: 0px;
+				
+				
+			}
+			section>.n-content{
+				width: 1100px;
+				height: 19000px;
+				margin-top: 66px;
+				/*background: #C4E3F3;*/
+				position: relative;
+			}
+			section>.n-content>.n-content-left{
+				width: 700px;
+				height: 15885px;
+				position: absolute;
+				left: 0px;
+				top: 0px;
+				background: white;
+			}
+			section>.n-content>.n-content-left>.n-c-l-head{
+				width: 700px;
+				height: 40px;				
+				border-bottom: 1px solid black;
+				margin-bottom:20px ;
+				padding: 0px 0px 10px 0px ;												
+			}
+			section>.n-content>.n-content-left>.n-c-l-head>h2{
+				padding-top: 0px;
+				margin-top:0px ;
+				font-size: 22px;
+				font-weight: 600;
+			}
+			section>.n-content>.n-content-left>.goods{
+				width: 700px;
+				height: 114px;
+				/*background: #C9E2B3;*/
+				position: relative;
+			}
+			section>.n-content>.n-content-left>.goods>.goods-1{
+				width: 700px;
+				height: 28px;
+				margin-top: 0px;
+				line-height: 28px;
+				font-size: 14px;
+				font-weight: bold;
+				position: absolute;
+				top: 20px;
+				left: 0px;
+				/*display: inline-block;*/
+			}
+			section>.n-content>.n-content-left>.goods>.goods-2{
+				width: 700px;
+				height: 28px;
+				font-size: 14px;
+				color: red;
+				position: absolute;
+				top: 58px;
+				left: 0px;
+			}
+			section>.n-content>.n-content-left>img{
+				width: 100%;
+			}
+			section>.n-content>.n-content-left>.BADGA{
+				width: 700PX;
+				height: 300PX;
+				/*background: #66AFE9;*/
+				margin-top: 30px;
+			}
+			section>.n-content>.n-content-left>.BADGA{
+				width: 700px;
+				margin-bottom: 15px;
+				font-size: 14px;
+				color:#666;
+			}
+			section>.n-content>.n-hotrecommend{
+				width: 340px;
+				height: 638px;
+				position: absolute;
+				top: 0px;
+				right: 0px;
+				/*background: #67B168;*/
+			}
+			section>.n-content>.n-hotrecommend>.n-r-head{
+				width: 340px;
+				height: 40px;
+				border-bottom: 1px solid black;
+				margin-bottom:20px ;
+				padding: 0px 0px 10px 0px ;	
+			}
+			section>.n-content>.n-hotrecommend>.n-r-head>h2{
+				padding-top: 0px;
+				margin-top:0px ;
+				font-size: 22px;
+				font-weight: 600;	
+			}
+			section>.n-content>.n-hotrecommend>.list-f-cb{
+				width: 340px;
+				height: 560px;
+				margin-top: 30px;
+				background: white;
+				position: relative;
+			}
+			section>.n-content>.n-hotrecommend>.list-f-cb>ul{
+				/*position: absolute;
+				top: 0px;
+				left: 0px;*/
+			}
+			section>.n-content>.n-hotrecommend>.list-f-cb>ul>li{
+				list-style: none;
+				width: 340px;
+				height: 100px;
+				margin-bottom:50px ;
+				/*background: #C7DDEF;*/
+				position: relative;
+			}
+			section>.n-content>.n-hotrecommend>.list-f-cb>ul>li>.min-goods-box{
+				display: block;
+				width: 100px;
+				height: 100px;
+				position: absolute;
+				top: 0px;
+				left: 0px;
+				
+			}
+			section>.n-content>.n-hotrecommend>.list-f-cb>ul>li>.min-goods-box>img{
+				width: 100%;
+				height: 100%;
+			}
+			section>.n-content>.n-hotrecommend>.list-f-cb>ul>li>.min-goods-name{
+				width: 230px;
+				height: 48px;
+				margin-top: 10px;
+				background: white;
+				position: absolute;
+				top: 0px;
+				right: 0px;
+			}
+			section>.n-content>.n-hotrecommend>.list-f-cb>ul>li>.min-goods-name>.tejia{
+				display: block;
+				height: 18px;
+				width: 30px;
+				border: 1px solid red;
+				color: red;
+				font-size: 10px;
+				text-align:center;
+				line-height: 18px;
+				position: absolute;
+				left: 0px;
+				/*top: 0px;*/
+			}
+			#long_t{
+				width: 60px;
+			}
+			section>.n-content>.n-hotrecommend>.list-f-cb>ul>li>.min-goods-name>a{
+				text-decoration:none;
+				color: black;
+				font-size: 14px;
+			}
+			#double{
+				overflow: hidden;
+			    text-overflow: ellipsis;
+			    display: -webkit-box;
+			    -webkit-line-clamp: 2;
+			    -webkit-box-orient: vertical;
+			}
+			section>.n-content>.n-hotrecommend>.list-f-cb>ul>li>.final_price{
+				display: block;
+				width: 230px;
+				height: 24px;
+				position: absolute;
+				right: 0px;
+				bottom: 0px;
+				color: red;
+			}
+			.GIGN{
+				position: fixed;
+				top: 200px;
+				right: 200px;
+			}
+			.GIGN>li{
+				width: 60px;
+				height: 60px;
+				list-style: none;
+				border: 1px solid black;
+				text-align: center;
+				/*line-height: 80px;
+				font-size: 14px;*/
+				
+			}
+			.GIGN>li>span{
+				/*text-align: center;*/
+				line-height: 30px;
+				font-size: 10px;
+				color: #666666;
+			}
+			#WDNMD:hover{
+				background: black;
+				color: white;
+				
+			}
+			footer{
+				width: 100%;
+				height: 160px;
+				background: rgb(242,242,242);
+				min-width:1125px;
+			};
+		</style>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.css"/>
+		<script src="js/jquery-3.5.1.js"></script>
+		<script src="js/bootstrap.js"></script>
+	<body>
+		<header>
+			<div class="m-nav-cb">
+				<div class="logo">
+					<img src="img/LWH_LOGO.png"/>
+				</div>
+			</div>
+		</header>
+		<section>
+			<div class="m-bread">
+				<div class="block">
+					<a href="">首页</a>
+					<span class="glyphicon glyphicon-menu-right" aria-hidden="true" >HT-08运动蓝牙耳机 3D立体声 三键线控 安卓苹果通用</span>
+					<div class="share_fr">
+						<span class="glyphicon glyphicon-share" aria-hidden="true">分享</span>
+					</div>
+				</div>
+			</div>
+			<div class="f-cb">
+				<div class="c_1">
+					<div class="img_box1"><img src="img/LWH_earpod.jpg"/></div>
+					<div class="img_box2"></div>
+				</div>
+				<div class="basic">
+					<h2 class="f-ff2">HT-08运动蓝牙耳机 3D立体声 三键线控 安卓苹果通用</h2>
+					<p class="sellpoint">3D立体声 佩戴舒适 狂甩不掉 三键线控 待机时间长 连续听歌5-7小时</p>
+					<p class="price">
+						<span class="rmb">￥</span>
+						<em class="j-flag">59</em>
+						<span class="dis">￥</span>
+						<span class="orgin_price">76</span>
+					</p>
+					<div class="basic_bm">
+						<ul>
+							<li>促销：</li>
+							<li>颜色：</li>
+							<li>数量：</li>
+							<li style="margin-bottom:10px ;">服务：</li>
+						</ul>
+						<div class="basic_bmr">
+							<div class="salo"></div>
+							<button class="btn btn-default" type="submit" id="color">白色</button>
+							<div class="btn-group" role="group" aria-label="..." id="number">
+  								<button type="button" class="btn btn-default">-</button>
+  								<button type="button" class="btn btn-default">1</button>
+ 								<button type="button" class="btn btn-default">+</button>
+							</div>
+							<div class="serve"></div>
+						</div>
+						
+					</div>
+					<div class="button_box">
+						<button class="btn btn-default" type="submit">立即购买</button>
+						<button class="btn btn-danger" type="submit"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span>加入购物车</button>
+					</div>
+				</div> 
+			</div>
+			<div class="n-content">
+				<div class="n-content-left">
+					<div class="n-c-l-head">
+						<h2  ">
+							商品详情
+						</h2>
+					</div>
+					<div class="goods">
+						<p class="goods-1">影巨人 HT-08 运动蓝牙耳机</p>
+						<p class="goods-2">装箱清单：耳机× 1，充电线× 1，说明书× 1。</p>
+					</div>
+					<img src="img/LWH_1.jpg" alt="" />
+					<img src="img/LWH_2.jpg" alt="" />
+					<img src="img/LWH_3.jpg" alt="" />
+					<img src="img/LWH_4.jpg" alt="" />
+					<img src="img/LWH_5.jpg" alt="" />
+					<img src="img/LWH_6.jpg" alt="" />
+					<img src="img/LWH_8.jpg" alt="" />
+					<img src="img/LWH_9.jpg" alt="" />
+					<img src="img/LWH_10.jpg" alt="" />
+					<img src="img/LWH_11.jpg" alt="" />
+					<img src="img/LWH_12.jpg" alt="" />
+					<img src="img/LWH_13.jpg" alt="" />
+					<img src="img/LWH_14.jpg" alt="" />
+					<img src="img/LWH_15.jpg" alt="" />
+					<img src="img/LWH_16.jpg" alt="" />
+					<img src="img/LWH_17.jpg" alt="" />
+					<img src="img/LWH_18.jpg" alt="" />
+					<img src="img/LWH_19.jpg" alt="" />
+					<div class="BADGA">
+						<p class="last_one">商品交易成功后会在2个工作日内由深圳市恒天鸿业科技限公司发货，法定节假日顺延，请在确认商品完好后再签收。若存在质量问题，请务必在7天之内联系客服：</p>
+						<p class="last_two">·客服账号：私信 @云音乐客服</p>
+						<p class="last_three">·温馨提示：完整的包装、配件和保修卡是电子产品进行售后的基础，请务必查看齐全后签收并妥善保管。</p>
+						<p class="last_four">注：因质量问题而退/换货所产生的运费报销最高15元，且须提供运费支付凭据，可寄出平邮，不支持顺丰，不支持到付。</p>
+					</div>
+					
+				</div>
+				<div class="n-hotrecommend">
+					<div class="n-r-head">
+						<h2>热门商品</h2>
+					</div>
+					<div class="list-f-cb">
+						<ul>
+							<li>
+								<a href="" class="min-goods-box"><img src="img/LWH_min_1.png"/></a>
+								<div class="min-goods-name">
+									<span class="tejia">特价</span>	
+									<a href="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;HT-08运动蓝牙耳机 3D立体声 三键线控 安卓苹果通用</a>
+									
+								</div>
+								<span class="final_price">￥59</span>
+							</li>
+							<li>
+								<a href="" class="min-goods-box"><img src="img/LWH_min_2.png" alt="" /></a>
+								<div class="min-goods-name">
+									<span class="tejia">特价</span>	
+									<a href="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;网易云音乐玩乐系列Slogan短袖T恤</a>
+									
+								</div>
+								<span class="final_price">￥79</span>
+							</li>
+							<li>
+								<a href="" class="min-goods-box"><img src="img/LWH_min_3.png" alt="" /></a>
+								<div class="min-goods-name">
+									<span class="tejia">特价</span>	
+									<a href="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;网易云音乐享乐系列红心透明双层吸管杯</a>
+									
+								</div>
+								<span class="final_price">￥39</span>
+							</li>
+							<li  style="margin-bottom: none;">
+								<a href="" class="min-goods-box"><img src="img/LWH_min_4.png" alt="" /></a>
+								<div class="min-goods-name">
+									<span class="tejia" id="long_t">用券减120</span>	
+									<a href="" id="double">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;H16 Pro 入耳检测开盖弹窗无线充电 蓝牙5.0真无线耳机 苹果安卓通用</a>
+									
+								</div>
+								<span class="final_price">￥229</span>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+				
+		</section>
+		<ul class="GIGN">
+			<li><span >查看<br>营业执照</span></li>
+			<li><span>100%<br>正品</span></li>
+			<li><span>七天无理<br>由退货</span></li>
+			<li><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"><br>购物车</span></li>
+			<li><span class="glyphicon glyphicon-phone-alt" aria-hidden="true"><br>客服</span></li>
+			<li id="WDNMD" style="display: none;"><span class="glyphicon glyphicon-menu-up" aria-hidden="true"><br>top</span></li>
+		</ul>
+		<footer></footer>
+		<script>
+			$(window).scroll(function(){
+				if($(window).scrollTop()>500){
+					$("#WDNMD").show();
+				}else{
+					$("#WDNMD").hide();
+				}
+				
+			})
+			$("#WDNMD").click(function(){
+				$("body,html").animate({"scrollTop":0},1000);
+			})
+		</script>
+	</body>
+</html>
